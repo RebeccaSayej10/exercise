@@ -16,12 +16,12 @@ function App() {
           
           </div>
 
-          {/* Main Content */}
+      
           <div className="flex-grow-1 p-3 ">
               <h1 className='header1'>Main Content Area</h1>
               <p>This is where your main content will go.</p>
 
-            {selectedUser && ( // Conditionally render user details if a user is selected
+            {selectedUser && ( 
                 <div className="user-details mt-4">
                     <h3>User Details</h3>
                     <p><strong>ID:</strong> {selectedUser.id}</p>
@@ -30,7 +30,7 @@ function App() {
                     <p><strong>Gender:</strong> {selectedUser.gender}</p>
                     <p><strong>Phone:</strong> {selectedUser.phone}</p>
                     <p><strong>Email:</strong> {selectedUser.email}</p>
-                    {/* Add more user details as needed */}
+               
                 </div>
             )}
         </div>

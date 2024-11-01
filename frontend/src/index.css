@@ -48,6 +48,7 @@ p{
 /* Links  */
 .hyperlink_names_slidebar{
   color: var(--color-body);
+  display: block;
 }
 
 a:hover{
@@ -57,11 +58,15 @@ a:hover{
 
 li:hover{
   background-color: var(--color-body);
+  color: var(--color-secondary);
 }
 
 /* Lists  */
 ul, li{
 width: 100%;
+}
+li{
+  padding: 0;
 }
 
 .slideBar{

@@ -35,10 +35,10 @@ const UserData = ({ setSelectedUser }) => {
                
                 <a className='hyperlink_names_slidebar text-decoration-none'
                     
-                //     onClick={() => handleUserClick(user.id)} 
+             
                 onClick={(e) => {
-                  e.preventDefault(); // Prevent default anchor behavior
-                  setSelectedUser(user); // Pass the entire user object to the parent
+                  e.preventDefault(); 
+                  setSelectedUser(user); 
               }}
                 >
                     <h5 className='d-inline m-2'> {user.id}.</h5> {user.firstName} {user.lastName} 
@@ -49,58 +49,17 @@ const UserData = ({ setSelectedUser }) => {
 );
 };
 
-const handleUserClick = (userId) => {
 
-console.log(`User clicked: ${userId}`);
-{/* <ul>
-        {users.map((user) => (
-          <li key={user.id}>
-        
-            <div>
-              <h2>{user.firstName} {user.lastName}</h2>
-              <p><strong>ID:</strong> {user.id}</p>
-              <p><strong>Age:</strong> {user.age}</p>
-              <p><strong>Gender:</strong> {user.gender}</p>
-              <p><strong>Email:</strong> {user.email}</p>
-              <p><strong>Phone:</strong> {user.phone}</p>
-            </div>
-          </li>
-        ))}
-      </ul> */}
 
-};
 
-const getUserList=()=>{
-return(
-<div>
-      <h1>User List</h1>
-      <ul>
-        {users.map((user) => (
-          <li key={user.id}>
-            {/* Destructure the user object to extract properties */}
-            <div>
-              <h2>{user.firstName} {user.lastName}</h2>
-              <p><strong>ID:</strong> {user.id}</p>
-              <p><strong>Age:</strong> {user.age}</p>
-              <p><strong>Gender:</strong> {user.gender}</p>
-              <p><strong>Email:</strong> {user.email}</p>
-              <p><strong>Phone:</strong> {user.phone}</p>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </div>
-);
-};
 
-  // Handle loading state
   if (loading) return <p>Loading...</p>;
-  // Handle error state
+
   if (error) return <p>{error}</p>;
 
   return (
     <div>
-    {UserGetName()} {/* Call the method to render the user list */}
+    {UserGetName()} 
 </div>
   );
 
