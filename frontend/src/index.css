@@ -1,17 +1,70 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-body {
+
+:root{
+  --color-primary:#26668f;
+  --color-secondary: #fcf1de;
+  --color-accent: #1e5232;
+  --color-headings: #7aaa99;
+  --color-body: #5159a9;
+
+}
+
+
+/* Typography */
+
+
+body{
+
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--color-accent);
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.header1{
+  color: var(--color-accent);
+  font-weight: bold;
+}
+
+.header4{
+  color: var(--color-headings);
+  font-weight: 700;
+}
+
+p{
+  color: var(--color-body);
+}
+
+
+/* Links  */
+.hyperlink_names_slidebar{
+  color: var(--color-body);
+}
+
+a:hover{
+  color: var(--color-secondary);
+
+}
+
+li:hover{
+  background-color: var(--color-body);
+}
+
+/* Lists  */
+ul, li{
+width: 100%;
+}
+
+.slideBar{
+  width: 14rem;
+  border-radius: 10px;
 }
